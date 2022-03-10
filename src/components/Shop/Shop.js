@@ -9,6 +9,7 @@ const Shop = () => {
   const [cart, setCart] = useState([]);
   const [displayProducts, setDisplayProducts] = useState([]);
 
+  // Data Load from JSON file/API
   useEffect(() => {
     // console.log("product api called");
     fetch("./products.JSON")
@@ -73,7 +74,6 @@ const Shop = () => {
       </div>
       <div className="shop-container">
         <div className="product-container">
-          <h3>Products: {products.length}</h3>
           {/* {products.map((product) => (
             <Product
               product={product}
